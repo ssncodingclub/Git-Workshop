@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: lightgray;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+#team-images img {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+}
+
+#get-started a, #first-contributions a, #feedback a {
+    display: block;
+    margin-top: 10px;
+    color: blue;
+    text-decoration: underline;
+}
