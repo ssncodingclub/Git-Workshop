@@ -3,8 +3,7 @@ body {
 }
 
 header {
-    background-color: lightgray;
-    text-align: center;
+    background-color: black;
     padding: 20px;
 }
 
@@ -21,8 +20,62 @@ section {
 }
 
 #get-started a, #first-contributions a, #feedback a {
+    max-width: fit-content;
     display: block;
-    margin-top: 10px;
+    margin: 10px;
+    margin-inline: auto;
     color: blue;
-    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    transition: 0.75s;
+}
+
+#get-started a:hover, #first-contributions a:hover, #feedback a:hover {
+    font-size: 22px;
+    color: gold;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;  
+}
+
+h1, h2 {
+    max-width: fit-content;
+    margin-inline: auto;
+    color: lightgreen;
+}
+
+.image{
+
+    /* grayscale animation (beginning) */
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+
+    /* Growth animation (beginning) */
+    transition: 1s ease;
+}
+
+.image:hover{
+
+    /* grayscale animation (end) */
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+
+    /* growth (end) */
+    -webkit-transform: scale(120%);
+    -ms-transform: scale(120%);
+    transform: scale(120%);
+    transition: 1s ease;
+
+    /* border */
+    box-shadow: 0 0 0 2px;
+}
+#ULIST{
+    transition: 1s ease;
+}
+
+.ULIST:hover:hover{
+    color: orangered;
+    font-size: 110%;
+    font-weight: bold;
+    /* font-style: italic; */
+    transition: 1s ease;
 }
